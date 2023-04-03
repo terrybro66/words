@@ -8,3 +8,13 @@
   margin: auto 12px auto;
   width: 80%;
 }
+.letter{
+  width: 60px;
+  border: solid 1px #000;
+  border-radius: 6px;
+
+}
+.letter input{
+  padding:12px;
+  font-size: 2rem;
+}
