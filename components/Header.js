@@ -4,6 +4,9 @@ import styles from "./Header.module.css"; // import the CSS module
 
 const Header = () => {
   const [word, setWord] = useState("");
+  const handleChange = (e) => {
+    setWord(e.target.value);
+  };
 
   const words = ["cat", "dog", "bird", "fish", "mouse"];
   return (
