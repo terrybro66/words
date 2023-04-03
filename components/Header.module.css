@@ -6,14 +6,20 @@
   margin-bottom: 10px;
   display: flex;
   margin: auto 12px auto;
-  width: 80%;
 }
 .letter{
   border: solid 1px #000;
   border-radius: 6px;
+  margin-right: 4px;
 
 }
 .letter input{
-  padding:12px;
-  font-size: 2rem;
+  padding:4px;
+  font-size: 8rem;
+  width: 142px;
+  text-align: center;
+}
+.letter input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #aaa;
+  opacity: 1; /* Firefox */
 }
