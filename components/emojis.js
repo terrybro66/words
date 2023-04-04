@@ -81,6 +81,7 @@ const emojis = [
   { name: "Fly", codepoint: "\u{1FAB0}" },
   { name: "Octopus", codepoint: "\u{1F419}" },
   { name: "Bear", codepoint: "\u{1F43B}" },
+  { name: "Crocodile", codepoint: "\u{1F40A}" },
 ];
 
 export default emojis;

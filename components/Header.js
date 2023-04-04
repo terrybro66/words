@@ -13,6 +13,7 @@ const Header = () => {
   const [ranNum, setRanNum] = useState(0);
   const [letter, setLetter] = useState("");
   const [codepoint, setCodepoint] = useState("");
+  const [inputClass, setInputClass] = useState("");
 
   useEffect(() => {
     const randomNumber = getRanNum();
@@ -24,8 +25,14 @@ const Header = () => {
     return Math.floor(Math.random() * words.length);
   }
 
-  const handleChange = (e) => {
-    setLetter(e.target.value);
+  const handleChange = (letter, event) => {
+    if (letter === event.target.value) {
+      //add a class to the input
+
+      event.target.style.backgroundColor = "green";
+    } else {
+      event.target.style.backgroundColor = "red";
+    }
   };
 
   return (
@@ -35,9 +42,13 @@ const Header = () => {
         return (
           <div className={styles.letter} key={i}>
             <input
+              className={`${inputClass}`}
               type="text"
               placeholder={letter}
-              onChange={handleChange}
+              onChange={(event) => {
+                event.persist();
+                handleChange(letter, event);
+              }}
             ></input>
           </div>
         );

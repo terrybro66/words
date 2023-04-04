@@ -15,9 +15,8 @@
 .letter input{
   padding:0;
   font-size: 8rem;
-  width: 142px;
+  width: 122px;
   text-align: center;
-  border: solid 1px #666;
   border-radius: 5px;
 }
 .letter input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -27,4 +26,11 @@
 .emoji{
   font-size: 8rem;
   margin-right: 4px;
+}     
+.correct{
+  border-color:  rgb(37, 78, 37);
+  
+}
+.incorrect{
+  border-color: rgb(132, 28, 2);
 }
